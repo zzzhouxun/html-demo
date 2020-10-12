@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      body {
+        background-color: #4A4CFF;
+      }
+  
+      h1 {
+        color: white;
+        text-align: left;
+        font-family: "Microsoft JhengHei UI";
+        font-size: 48px;
+        padding-left: 50px;
+      }
+  
+  
+      .card {
+        background-color: #FFFFFF;
+        height: 300px;
+        width: 300px;
+        border: 1px solid white;
+        border-radius: 2ch;
+        position: static;
+        top: 150px;
+        left: 135px;
+  
+      }
+  
+      .card .tittle {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        padding: 0px 30px;
+      }
+  
+  
+      .card .tittle h3 {
+        font-family: "Microsoft JhengHei UI";
+        font-size: 24px;
+        padding-left: 0px;
+      }
+  
+      .image {
+        padding-left: 50px;
+  
+      }
+  
+      .image:hover {
+        transform: rotate(360deg);
+        animation: myfirst 2s;
+      }
+  
+      @keyframes myfirst {
+        from {
+          transform: rotate(0deg);
+        }
+  
+        to {
+          transform: rotate(360deg);
+        }
+      }
+  
+      img {
+        border-radius: 400px;
+      }
+  
+      .row {
+        display: -webkit-flex;
+        display: flex;
+      }
+  
+      .card {
+        margin: 50px;
+      }
+  
+      /* button {
+        padding: 0;
+        background-color: white;
+        box-sizing: border-box;
+    } */
+      .play {
+        /*     height: 25px;
+        border-style: solid;
+        border-width: 10px 0 10px 20px;
+        border-color: transparent transparent transparent #4A4CFF;
+        border-radius: 2px; */
+        width: 0px;
+        height: 0px;
+        border-top: 12px solid transparent;
+        border-right: 20px solid transparent;
+        border-left: 20px solid #4A4CFF;
+        border-bottom: 12px solid transparent;
+      }
+  
+      .pause {
+        width: 20px;
+        height: 20px;
+        border-style: double;
+        border-width: 0px 0px 0px 20px;
+        border-color: #4A4CFF;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    
+    <div>
+      <div>
+        <h1>Listen To</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="card">
+          <div class="tittle">
+            <div class="play">
+            </div>
+            <h3>Music</h3>
+          </div>
+          <div class="image">
+            <a href="">
+              <img src="https://s1.ax1x.com/2020/10/07/0dkdVx.png" width="200" height="200">
+              <!--       <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+        </audio> -->
+              <!--       <audio id="myaudio" src="//music.163.com/outchain/player?type=2&id=1456286877&auto=1&height=66" controls="controls" autostart="false" loop="false" hidden="true" ></audio> -->
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="tittle">
+            <div class="pause">
+            </div>
+            <h3>Music</h3>
+          </div>
+          <div class="image">
+            <a href="">
+              <img src="https://s1.ax1x.com/2020/10/07/0dkQaV.png" width="200" height="200">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="tittle">
+            <div class="play">
+            </div>
+            <!--       <img src= "https://s1.ax1x.com/2020/10/07/0dEJBR.png" width="30" height="30"> -->
+            <h3>Music</h3>
+          </div>
+          <div class="image">
+            <a href="">
+              <img src="https://s1.ax1x.com/2020/10/07/0dk5i8.png" width="200" height="200">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="tittle">
+            <div class="play">
+            </div>
+            <!--       <img src= "https://s1.ax1x.com/2020/10/07/0dEJBR.png" width="30" height="30"> -->
+            <h3>Music</h3>
+          </div>
+          <div class="image">
+            <a href="">
+              <img src="https://s1.ax1x.com/2020/10/07/0dkOZq.png" width="200" height="200">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="tittle">
+            <div class="play">
+            </div>
+            <!--       <img src= "https://s1.ax1x.com/2020/10/07/0dEJBR.png" width="30" height="30"> -->
+            <h3>Music</h3>
+          </div>
+          <div class="image">
+            <a href="">
+              <img src="https://s1.ax1x.com/2020/10/07/0dAW6J.png" width="200" height="200">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="tittle">
+            <div class="play">
+            </div>
+            <!--       <img src= "https://s1.ax1x.com/2020/10/07/0dEJBR.png" width="30" height="30"> -->
+            <h3>Music</h3>
+          </div>
+          <div class="image">
+            <a href="">
+              <img src="https://s1.ax1x.com/2020/10/07/0dAXXd.md.png" width="200" height="200">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
