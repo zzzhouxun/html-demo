@@ -3,112 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <title></title>
-    <style>
-      body {
-        background-color: #4A4CFF;
-      }
-  
-      h1 {
-        color: white;
-        text-align: left;
-        font-family: "Microsoft JhengHei UI";
-        font-size: 48px;
-        padding-left: 50px;
-      }
-  
-  
-      .card {
-        background-color: #FFFFFF;
-        height: 300px;
-        width: 300px;
-        border: 1px solid white;
-        border-radius: 2ch;
-        position: static;
-        top: 150px;
-        left: 135px;
-  
-      }
-  
-      .card .tittle {
-        display: flex;
-        align-items: center;
-        padding-left: 10px;
-        padding: 0px 30px;
-      }
-  
-  
-      .card .tittle h3 {
-        font-family: "Microsoft JhengHei UI";
-        font-size: 24px;
-        padding-left: 0px;
-      }
-  
-      .image {
-        padding-left: 50px;
-  
-      }
-  
-      .image:hover {
-        transform: rotate(360deg);
-        animation: myfirst 2s;
-      }
-  
-      @keyframes myfirst {
-        from {
-          transform: rotate(0deg);
+
+      <!-- <script src="p5.js"></script>
+      <script src="p5.sound.js">
+        let song;
+        function play() {
+          console.log('play video')
+          song = loadSound('/小丑.wav');
+          song.play();
         }
-  
-        to {
-          transform: rotate(360deg);
-        }
-      }
-  
-      img {
-        border-radius: 400px;
-      }
-  
-      .row {
-        display: -webkit-flex;
-        display: flex;
-      }
-  
-      .card {
-        margin: 50px;
-      }
-  
-      /* button {
-        padding: 0;
-        background-color: white;
-        box-sizing: border-box;
-    } */
-      .play {
-        /*     height: 25px;
-        border-style: solid;
-        border-width: 10px 0 10px 20px;
-        border-color: transparent transparent transparent #4A4CFF;
-        border-radius: 2px; */
-        width: 0px;
-        height: 0px;
-        border-top: 12px solid transparent;
-        border-right: 20px solid transparent;
-        border-left: 20px solid #4A4CFF;
-        border-bottom: 12px solid transparent;
-      }
-  
-      .pause {
-        width: 20px;
-        height: 20px;
-        border-style: double;
-        border-width: 0px 0px 0px 20px;
-        border-color: #4A4CFF;
-        border-radius: 2px;
-      }
-    </style>
+
+      </script>
+      <script src="sketch.js"></script> -->
+      <script src="./index.js"></script>
+      <!-- 引入的样式 -->
+      <link rel="stylesheet" type="text/css" href="./static/style/index.css">
+      <!-- 页面样式 -->
+      <style>
+
+      </style>
   </head>
 
 
   <body>
-    
+
     <div>
       <div>
         <h1>Listen To</h1>
@@ -123,7 +41,7 @@
             <h3>Music</h3>
           </div>
           <div class="image">
-            <a href="">
+            <a href="" onClick="play()">
               <img src="https://s1.ax1x.com/2020/10/07/0dkdVx.png" width="200" height="200">
               <!--       <audio controls>
         <source src="horse.mp3" type="audio/mpeg">
@@ -203,7 +121,8 @@
         </div>
 
       </div>
-
+      <audio id="player" src="" class="plaer-contain"></audio>
     </div>
   </body>
 </html>
+
