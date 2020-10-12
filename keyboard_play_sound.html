@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title></title>
-    <style>
+
+      <script src="p5.js"></script>
+      <script src="p5.sound.js">
+        let song;
+        function play() {
+          song = loadSound('/小丑.wav');
+          song.play();
+        }
+
+      </script>
+      <script src="sketch.js"></script>
+      <style>
       body {
         background-color: #4A4CFF;
       }
@@ -123,7 +134,7 @@
             <h3>Music</h3>
           </div>
           <div class="image">
-            <a href="">
+            <a href="" onclick="play()">
               <img src="https://s1.ax1x.com/2020/10/07/0dkdVx.png" width="200" height="200">
               <!--       <audio controls>
         <source src="horse.mp3" type="audio/mpeg">
@@ -207,3 +218,4 @@
     </div>
   </body>
 </html>
+
